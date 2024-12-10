@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(181, 231, 231);
+}
+.logo {
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(247, 223, 10);
+}
+
+.logo img {
+    height : 25px;
+   padding: 8px;
+}
+
+ .logo-name {
+    display: flex;
+    align-items: center;
+ }
+
+ .logo-company {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo-company p {
+    font-size: 10px;
+    padding-left: 35px;
+ }
+
+ .logo-company h3 {
+    font-size: 30px;
+ }
+
+ .nav-items {
+    display: flex;
+ }
+
+ .nav-items ul {
+    display: flex;
+ }
+
+ .nav-items ul li {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 20px;
+ }
+
+ .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+ }
+ .icon-1 {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  .icon-2 {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 670px) {
+    header nav {
+      border: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-items ul {
+      display: flex;
+      flex-direction: column;
+   }
+  }
+
+  /* main */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(225, 235, 235);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .items h3 {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+  }
+
+  .down {
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(44, 185, 44);
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .down a {
+    text-decoration: none;
+    padding: 50px 20px;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .p-first {
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .p-sec, .p-third {
+    margin: 5px;
+    font-size: 0.7rem;
+  }
+
+@media screen and  (max-width:670px) {
+    .container{
+      grid-template-columns: 1fr;
+    }
+}
+
+@media screen and  (max-width:870px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
